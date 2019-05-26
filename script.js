@@ -1,6 +1,9 @@
+/* eslint-env node, browser */
+/* eslint-disable no-unused-vars*/
+/* eslint-disable no-undef */
 const ballArray = [];
 const specs = {
-	number: 3,
+	number: 5,
 }
 
 for (let i = 0; i < specs.number; i++) {

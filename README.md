@@ -2,6 +2,7 @@
 Rewriting bouncing-balls.
 
 # To-do
-* Wall collision detection
-* Ball collision detection
 * Make it prettier
+
+# Bugs
+* Sometimes balls get stuck in each other.

@@ -1,3 +1,6 @@
+/* eslint-env node, browser */
+/* eslint-disable no-unused-vars*/
+/* eslint-disable no-undef */
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
 
@@ -6,7 +9,7 @@ class Ball{
 		this.id = id;
 		this.colour = colour;
 		this.size = size;
-		this.mass = 4/3 *Math.PI *size**3;
+		this.mass = 4/3 *Math.PI *(size/10)**3;
 		this.x = position[0];
 		this.y = position[1];
 		this.dx = speed[0];
