@@ -18,7 +18,7 @@ const random = {
 		return [Math.random()*x, Math.random()*y];
 	},
 	size: function(min, max) {
-		return Math.random*(max-min) + min;
+		return Math.random()*(max-min) + min;
 	}
 }
 
