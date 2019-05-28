@@ -2,6 +2,11 @@
 Rewriting bouncing-balls.
 
 # To-do
-* Make it prettier
+* Create skeleton layout in .html
+* Add content to .html
+* Style with .css
+* Input canvas size
+* Variable ball properties
+* Add ball with click
 
 # Bugs
