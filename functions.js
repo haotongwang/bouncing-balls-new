@@ -29,7 +29,6 @@ function distance(ball1, ball2) {
 function resolveCollisions() {
 	for (let i1 = 0; i1 < ballArray.length; i1++) {
 		let ball1 = ballArray[i1];
-
 		// ball collisions
 		for (let i2 = i1 + 1; i2 < ballArray.length; i2++) {
 			// debugger
@@ -53,11 +52,9 @@ function resolveCollisions() {
 				ballArray[i2].dy = (v2*Math.cos(theta2 - phi)*(m2-m1) + 2*m1*v1*Math.cos(theta1 - phi))/(m2+m1)*Math.sin(phi) + v2*Math.sin(theta2-phi)*Math.sin(phi+Math.PI/2);
 
 				// Remove ball overlap during collision
-
-				// ballArray[i1].dx = -1*ballArray[i1].dx;
-				// ballArray[i1].dy = -1*ballArray[i1].dy;
-				// ballArray[i2].dx = -1*ballArray[i2].dx;
-				// ballArray[i2].dy = -1*ballArray[i2].dy;
+				let overlap = ball1.size + ball2.size - distance(ball1, ball2);
+				ballArray[i1].x += overlap*Math.cos(phi);
+				ballArray[i1].y += overlap*Math.sin(phi);
 			}
 		}
 

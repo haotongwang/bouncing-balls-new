@@ -5,4 +5,3 @@ Rewriting bouncing-balls.
 * Make it prettier
 
 # Bugs
-* Sometimes balls get stuck in each other.
